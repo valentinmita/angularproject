@@ -1,0 +1,13 @@
+
+    <div *ngFor="let item of prova " 
+    [class.selected]="item.id === selectedId">
+                      
+    <a
+    [routerLink]="['/details',item.id]">
+    <h1> {{ item.name }}</h1>
+    </a>
+    <h1> {{ item.id }}</h1>
+    <h1> {{ item.categories[0].name }}</h1>
+    <h1> {{ item.name }}</h1>
+
+      </div>
