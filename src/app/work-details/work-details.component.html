@@ -1,12 +1,13 @@
+<div *ngIf="item" [class.selected]="item.company.id === companiId">
+  <h1>{{ item.name }}</h1>
+  <h2>
+    Company:
+    <a [routerLink]="['/company', item.company.id]">{{ item.company.name }}</a>
+  </h2>
 
+  <h3>Categories: {{ item.categories[0].name }}</h3>
+  <h3>Date: {{ item.publication_date }}</h3>
+  <h3>Location: {{ item.locations[0].name }}</h3>
 
-
-
-
-<p>work-details works!</p>
-
-
-<div *ngIf="item">
-    <h3>{{ item.name }}</h3>
-    <h4>{{ item.id }}</h4>
-  </div>
+  <h4 [innerHtml]="item.contents"></h4>
+</div>

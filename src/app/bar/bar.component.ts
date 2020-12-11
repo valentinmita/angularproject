@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {GetApiService} from '../get-api.service';
+import {results} from "../results";
 
 @Component({
   selector: 'app-bar',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BarComponent implements OnInit {
 
-  constructor() { }
+ 
+  title= "Works";
 
-  ngOnInit(): void {
-  }
+  constructor(
+    private api: GetApiService,
+  ) { }
 
+ 
+  
+  ngOnInit(): void{}
 }
+

@@ -5,8 +5,8 @@
 company: string;
 contents:string;
 id : number;
- levels:string;
- locations:string;
+ levels:any;
+ locations:any;
  model_type: string;
  name: string;
  refs: string;

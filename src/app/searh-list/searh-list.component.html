@@ -1,0 +1,17 @@
+<div *ngIf="company">
+  <h2>{{ company.name }}</h2>
+  <img [src]="company.refs.logo_image" width="auto" height="100px" />
+  <p>{{ company.description }}</p>
+  <h3>Location: {{ company.locations[0].name }}</h3>
+  <h4>Industries: {{ company.industries[0].name }}</h4>
+
+  <h3>
+    Visit here for
+    <a
+      class="btn btn-primary"
+      href="{{ company.refs.landing_page }}"
+      role="button"
+      >More</a
+    >
+  </h3>
+</div>
